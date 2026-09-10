@@ -21,13 +21,13 @@ const layers = 10;
 const blur = 1;
 
 for (let i = 0; i < layers; i++) {
-    const element = document.createElement('div');
-    const start = (layers - i - 1) / layers * 100;
-    const end = 100;
+	const element = document.createElement('div');
+	const start = 0;
+	const end = (layers - i) / layers * 100;
 
-    element.style.setProperty('--blur', `${blur}px`);
-    element.style.setProperty('--start', `${start}%`);
-    element.style.setProperty('--end', `${end}%`);
+	element.style.setProperty('--blur', `${blur}px`);
+	element.style.setProperty('--start', `${start}%`);
+	element.style.setProperty('--end', `${end}%`);
 
-    blurGradient.appendChild(element);
+	blurGradient.appendChild(element);
 }
