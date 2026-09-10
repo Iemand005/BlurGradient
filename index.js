@@ -18,7 +18,7 @@ for (let i = layers; i > 0; i--) {
 	*/
 
 const layers = 10;
-const blur = 1;
+const blur = 0.5;
 
 for (let i = 0; i < layers; i++) {
 	const element = document.createElement('div');
