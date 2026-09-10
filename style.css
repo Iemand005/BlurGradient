@@ -9,8 +9,8 @@
 
 
 .blur-gradient > * {
-	width: 100%;
-	height: 100%;
+	position: absolute;
+	inset: 0;
 	backdrop-filter: blur(var(--blur));
 	mask-image: linear-gradient(to bottom, var(--mask));
 }
