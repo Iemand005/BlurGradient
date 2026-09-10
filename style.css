@@ -3,8 +3,6 @@
 	z-index: 10;
 	inset: 0;
 	pointer-events: none;
-	display: flex;
-	flex-direction: column;
 }
 
 .blur-gradient > * {
@@ -12,64 +10,4 @@
 	inset: 0;
 	backdrop-filter: blur(var(--blur));
 	clip-path: polygon(0 var(--start), 100% var(--start), 100% var(--end), 0 var(--end));
-}
-
-.blur-gradient > :nth-child(1) {
-	--blur: 10px;
-	--start: 0%;
-	--end: 10%;
-}
-
-.blur-gradient > :nth-child(2) {
-	--blur: 9px;
-	--start: 10%;
-	--end: 20%;
-}
-
-.blur-gradient > :nth-child(3) {
-	--blur: 8px;
-	--start: 20%;
-	--end: 30%;
-}
-
-.blur-gradient > :nth-child(4) {
-	--blur: 7px;
-	--start: 30%;
-	--end: 40%;
-}
-
-.blur-gradient > :nth-child(5) {
-	--blur: 6px;
-	--start: 40%;
-	--end: 50%;
-}
-
-.blur-gradient > :nth-child(6) {
-	--blur: 5px;
-	--start: 50%;
-	--end: 60%;
-}
-
-.blur-gradient > :nth-child(7) {
-	--blur: 4px;
-	--start: 60%;
-	--end: 70%;
-}
-
-.blur-gradient > :nth-child(8) {
-	--blur: 3px;
-	--start: 70%;
-	--end: 80%;
-}
-
-.blur-gradient > :nth-child(9) {
-	--blur: 2px;
-	--start: 80%;
-	--end: 90%;
-}
-
-.blur-gradient > :nth-child(10) {
-	--blur: 1px;
-	--start: 90%;
-	--end: 100%;
 }
