@@ -1,10 +1,11 @@
 const blurGradient = document.querySelector('.blur-gradient');
-const children = blurGradient.children;
 
-for (let i = 0; i < children.length; i++) {
-	const start = i / children.length * 100;
-	const end = (i + 1) / children.length * 100;
+for (let i = 10; i > 0; i--) {
+	const element = document.createElement('div');
 
-	children[i].style.setProperty('--start', `${start}%`);
-	children[i].style.setProperty('--end', `${end}%`);
+	element.style.setProperty('--blur', `${i}px`);
+	element.style.setProperty('--start', `${(10 - i) * 10}%`);
+	element.style.setProperty('--end', `${(11 - i) * 10}%`);
+
+	blurGradient.appendChild(element);
 }
