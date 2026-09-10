@@ -12,25 +12,29 @@
 	position: absolute;
 	inset: 0;
 	backdrop-filter: blur(var(--blur));
-	mask-image: linear-gradient(to bottom, var(--mask));
+	clip-path: polygon(0 var(--start), 100% var(--start), 100% var(--end), 0 var(--end));
 }
 
 .blur-gradient > :nth-child(1) {
 	--blur: 10px;
-	--mask: black 0%, black 20%, transparent 40%;
+	--start: 0%;
+	--end: 25%;
 }
 
 .blur-gradient > :nth-child(2) {
 	--blur: 5px;
-	--mask: transparent 20%, black 40%, transparent 60%;
+	--start: 25%;
+	--end: 50%;
 }
 
 .blur-gradient > :nth-child(3) {
 	--blur: 2px;
-	--mask: transparent 40%, black 60%, transparent 80%;
+	--start: 50%;
+	--end: 75%;
 }
 
 .blur-gradient > :nth-child(4) {
 	--blur: 1px;
-	--mask: transparent 60%, black 80%, transparent 100%;
+	--start: 75%;
+	--end: 100%;
 }
