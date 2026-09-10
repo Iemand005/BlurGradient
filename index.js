@@ -22,7 +22,7 @@ const blur = 1;
 
 for (let i = 0; i < layers; i++) {
     const element = document.createElement('div');
-    const start = i / layers * 100;
+    const start = (layers - i - 1) / layers * 100;
     const end = 100;
 
     element.style.setProperty('--blur', `${blur}px`);
