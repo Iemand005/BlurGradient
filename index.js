@@ -1,5 +1,6 @@
 const blurGradient = document.querySelector('.blur-gradient');
 
+/*
 const layers = 100;
 const maxBlur = 10;
 const exponent = 2;
@@ -13,4 +14,20 @@ for (let i = layers; i > 0; i--) {
 	element.style.setProperty('--end', `${(layers - i + 1) / layers * 100}%`);
 
 	blurGradient.appendChild(element);
+}
+	*/
+
+const layers = 10;
+const blur = 10;
+
+for (let i = 0; i < layers; i++) {
+    const element = document.createElement('div');
+    const start = i / layers * 100;
+    const end = 100;
+
+    element.style.setProperty('--blur', `${blur}px`);
+    element.style.setProperty('--start', `${start}%`);
+    element.style.setProperty('--end', `${end}%`);
+
+    blurGradient.appendChild(element);
 }
