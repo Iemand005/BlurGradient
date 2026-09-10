@@ -1,6 +1,6 @@
 const blurGradient = document.querySelector('.blur-gradient');
 
-const layers = 10;
+const layers = 100;
 const maxBlur = 10;
 const exponent = 2;
 
